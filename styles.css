@@ -121,8 +121,28 @@ li > span {
     font-size: 70px;
   }
 
-  .container {
+  .content {
     flex-direction: column;
     align-items: center;
   }
+}
+
+button {
+  position: absolute;
+  bottom: 25px;
+
+  background-color: rgba(20, 13, 25, 0.4);
+  color: rgba(255, 255, 255, .8);
+
+  height: 70px;
+  width: 70px;
+
+  border-radius: 50%;
+  border: solid 1px rgba(255, 255, 255, .6);
+  outline: none;
+}
+
+button:hover {
+  border: solid 1px #fff;
+  color: #fff;
 }

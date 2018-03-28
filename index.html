@@ -27,6 +27,7 @@
                 <a target="_blank" href="mailto:joonny220@gmail.com">GMAIL</a>
             </div>
         </div>
+        <button id="btn">About Me</button>
     </div>
     <div class="content">
         <div class="content-box">
@@ -49,5 +50,11 @@
         </div>
     </div>
 </body>
+
+<script>
+  document.getElementById("btn").addEventListener("click", () => {
+    document.body.scrollIntoView({block: "end"});
+  });
+</script>
 
 </html>
