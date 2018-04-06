@@ -7,7 +7,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width">
 <meta name="keywords" content="Jan Rochalski, Jan, Rochalski, Programmer, Back-end,
-Front-end, portfolio, programista, JavaScrpit, J's, " />
+Front-end, portfolio, programista, JavaScrpit," />
 <title>Jan Rochalski</title>
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
@@ -44,16 +44,26 @@ Front-end, portfolio, programista, JavaScrpit, J's, " />
             <h1>Skills</h1>
             <ul>
                 <li><span><b>Foreign languages</b></span> Polish, English</li>
-                <li><span><b>Programming languages</b></span> JavaScrpit, Cpp, Css, Scss, Html, TypeScript</li>
-                <li><span><b>Frameworks</b></span> React.js, React-native, express</li>
-                <li><span><b>Tools</b></span> Git, Linux</li>
+                <li><span><b>Programming languages</b></span> JavaScrpit, C++, CSS, SCSS, Html, TypeScript</li>
+                <li><span><b>Frameworks</b></span> React.js, React native, express.js, sequelize.js, socket.io</li>
+                <li><span><b>Tools</b></span> Git, Linux, Webpack</li>
             </ul>
         </div>
     </div>
 </body>
 
 <script>
-  document.getElementById("btn").addEventListener("click", () => {
+  window.addEventListener("scroll", () => {
+    if(window.scrollY === 0) {
+      document.getElementById("btn").className = "";
+    }
+    else {
+      document.getElementById("btn").className = "hide";
+    }
+  });
+  console.log(document.body);
+  document.getElementById("btn").addEventListener("click", data => {
+    data.srcElement.className = "hide";
     document.body.scrollIntoView({block: "end", behavior: "smooth"});
   });
 </script>
