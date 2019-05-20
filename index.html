@@ -1,71 +1,102 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width">
-<meta name="keywords" content="Jan Rochalski, Jan, Rochalski, Programmer, Back-end,
-Front-end, portfolio, programista, JavaScrpit," />
-<title>Jan Rochalski</title>
+  <link rel="stylesheet" href="styles.css" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-<link rel="stylesheet" href="styles.css" type="text/css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" type="text/css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
-
-
+  <title>Jan Rochalski</title>
 </head>
 <body>
-    <div class="main container">
-        <div class="animated fadeIn">
-            <div class="Name">Jan Rochalski</div>
-            <div class="languages">Front-end & Back-end</div>
-
-            <div class="animated1 fadeInDown btn-c">
-                <a target="_blank" href="https://github.com/jonny22094">PROJECTS</a>
-                <a target="_blank" href="https://web.facebook.com/janek.rochalski">FACEBOOK</a>
-                <a target="_blank" href="mailto:joonny220@gmail.com">GMAIL</a>
-            </div>
+  <div class="socialMedia">
+    <a class="socialMedia__item" target="_blank" href="https://github.com/jonny22094">
+      <i class="fab fa-github"></i>
+    </a>
+    <a class="socialMedia__item" target="_blank" href="https://www.linkedin.com/in/jan-rochalski-a54804172">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a class="socialMedia__item" target="_blank" href="mailto:joonny220@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+  <div class="container">
+    <secton class="container__box">
+      <div class="content">
+        <span class="content__name">Jan Rochalski</span>
+        <span class="content__profession">Front-End & Back-end</span>
+      </div>
+      <button class="about__button">About me</button>
+    </secton>
+    <secton class="container__box">
+      <div class="content">
+        <h2 class="label">About me</h2>
+        <div class="content__grid">
+          <div class="content__item content__text grid--header">
+              I am a 20 years old web programmer. I've interested an IT news and extreme sports. Everything I do, I do with passion. I started my story with programming 3 years ago.
+              Today this still makes me a lot of fun and from day to day I’m better.
+          </div>
+          <div class="content__item grid--skills">
+              <h2 class="label content__label">Skills</h2>
+              <ul class="list">
+                <li class="list__item">
+                  <p>
+                    <span class="list__item--name">
+                      Foreign languages:
+                    </span>
+                    <span class="list__item--skills">Polish, English</span>
+                  </p>
+                </li>
+                <li class="list__item">
+                  <p>
+                    <span class="list__item--name">
+                      Programing languages:
+                    </span>
+                    <span class="list__item--skills">JavaScript, TypeScript, C++</span>
+                  </p>
+                </li>
+                <li class="list__item">
+                  <p>
+                    <span class="list__item--name">
+                      Frameworks:
+                    </span>
+                    <span class="list__item--skills">React, Mobx & (MST), Redux, React-Native, Styled Components, Node.js, Express.js</span>
+                  </p>
+                </li>
+                <li class="list__item">
+                  <p>
+                    <span class="list__item--name">
+                      Tools:
+                    </span>
+                    <span class="list__item--skills">Git, MacOs, Linux, Webpack, CircleCi, SCSS, Electron</span>
+                  </p>
+                </li>
+              </ul>
+          </div>
+          <div class="content__item grid--experience">
+              <h2 class="label content__label">Experience</h2>
+              <ul class="list">
+                <li class="list__item">
+                  <p class="--between">
+                    <span class="list__item--name">
+                      <a href='https://eyedea.io/'>EYEDEA SA</a>
+                    </span>
+                    <span class="list__item--date">August 2018 - now</span>
+                  </p>
+                  <span class="list__item--description">
+                    Junior Front-end developer in React.js with (Mobx, Mobx-State-Tree) and Typescript.
+                    I created complex application using modular approaches and reusable components.
+                    And I'm created backends in Node.js with Syncano.
+                  </span>
+                </li>
+              </ul>
+          </div>
         </div>
-        <button id="btn">About Me</button>
-    </div>
-    <div class="content">
-        <div class="content-box">
-            <h1>About me</h1>
-            <p>
-              I'm 19 years old. I'm interested in parkour and programming.
-              3 years ago, I've started my programing story.
-              Today, programing still makes me a lot of fun.
-              I like working in team and learn new things.
-            </p>
-        </div>
-        <div class="content-box">
-            <h1>Skills</h1>
-            <ul>
-                <li><span><b>Foreign languages</b></span> Polish, English</li>
-                <li><span><b>Programming languages</b></span> JavaScrpit, C++, CSS, SCSS, Html, TypeScript</li>
-                <li><span><b>Frameworks</b></span> React.js, React native, express.js, sequelize.js, socket.io</li>
-                <li><span><b>Tools</b></span> Git, Linux, Webpack</li>
-            </ul>
-        </div>
-    </div>
+      </div>
+    </secton>
+  </div>
 </body>
-
-<script>
-  window.addEventListener("scroll", () => {
-    if(window.scrollY === 0) {
-      document.getElementById("btn").className = "";
-    }
-    else {
-      document.getElementById("btn").className = "hide";
-    }
-  });
-
-  document.getElementById("btn").addEventListener("click", data => {
-    data.srcElement.className = "hide";
-    document.body.scrollIntoView({block: "end", behavior: "smooth"});
-  });
-</script>
-
 </html>
