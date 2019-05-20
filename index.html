@@ -6,12 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <link rel="stylesheet" href="styles.css" type="text/css"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
   <title>Jan Rochalski</title>
 </head>
 <body>
+  <div class="socialMedia">
+    <a class="socialMedia__item" target="_blank" href="https://github.com/jonny22094">
+      <i class="fab fa-github"></i>
+    </a>
+    <a class="socialMedia__item" target="_blank" href="https://www.linkedin.com/in/jan-rochalski-a54804172">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a class="socialMedia__item" target="_blank" href="mailto:joonny220@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
   <div class="container">
     <secton class="container__box">
       <div class="content">
@@ -21,23 +32,71 @@
       <button class="about__button">About me</button>
     </secton>
     <secton class="container__box">
-      <h2 class="label">About me</h2>
-      <div class="content content__text">
-          I am a 19 years old web programmer. I've interested an IT news and extreme sports. Everything I do, I do with passion. I started my story with programming 3 years ago.
-          Today this still makes me a lot of fun and from day to day I’m better.
+      <div class="content">
+        <h2 class="label">About me</h2>
+        <div class="content__grid">
+          <div class="content__item content__text grid--header">
+              I am a 20 years old web programmer. I've interested an IT news and extreme sports. Everything I do, I do with passion. I started my story with programming 3 years ago.
+              Today this still makes me a lot of fun and from day to day I’m better.
+          </div>
+          <div class="content__item grid--skills">
+              <h2 class="label content__label">Skills</h2>
+              <ul class="list">
+                <li class="list__item">
+                  <p>
+                    <span class="list__item--name">
+                      Foreign languages:
+                    </span>
+                    <span class="list__item--skills">Polish, English</span>
+                  </p>
+                </li>
+                <li class="list__item">
+                  <p>
+                    <span class="list__item--name">
+                      Programing languages:
+                    </span>
+                    <span class="list__item--skills">JavaScript, TypeScript, C++</span>
+                  </p>
+                </li>
+                <li class="list__item">
+                  <p>
+                    <span class="list__item--name">
+                      Frameworks:
+                    </span>
+                    <span class="list__item--skills">React, Mobx & (MST), Redux, React-Native, Styled Components, Node.js, Express.js</span>
+                  </p>
+                </li>
+                <li class="list__item">
+                  <p>
+                    <span class="list__item--name">
+                      Tools:
+                    </span>
+                    <span class="list__item--skills">Git, MacOs, Linux, Webpack, CircleCi, SCSS, Electron</span>
+                  </p>
+                </li>
+              </ul>
+          </div>
+          <div class="content__item grid--experience">
+              <h2 class="label content__label">Experience</h2>
+              <ul class="list">
+                <li class="list__item">
+                  <p class="--between">
+                    <span class="list__item--name">
+                      <a href='https://eyedea.io/'>EYEDEA SA</a>
+                    </span>
+                    <span class="list__item--date">August 2018 - now</span>
+                  </p>
+                  <span class="list__item--description">
+                    Junior Front-end developer in React.js with (Mobx, Mobx-State-Tree) and Typescript.
+                    I created complex application using modular approaches and reusable components.
+                    And I'm created backends in Node.js with Syncano.
+                  </span>
+                </li>
+              </ul>
+          </div>
+        </div>
       </div>
     </secton>
-  </div>
-  <div class="socialMedia">
-    <a class="socialMedia__item" target="_blank" href="https://github.com/jonny22094">
-      <i class="fab fa-github"></i>
-    </a>
-    <a class="socialMedia__item" target="_blank" href="https://web.facebook.com/janek.rochalski">
-      <i class="fab fa-facebook-square"></i>
-    </a>
-    <a class="socialMedia__item" target="_blank" href="mailto:joonny220@gmail.com">
-      <i class="fas fa-envelope"></i>
-    </a>
   </div>
 </body>
 </html>
