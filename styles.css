@@ -206,3 +206,10 @@ a {
   }
 }
 
+@media (max-width: 900px) {
+  .socialMedia {
+    position: absolute;
+    top: 0;
+  }
+}
+
