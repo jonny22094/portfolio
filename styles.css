@@ -116,6 +116,7 @@ section {
   border: 1px solid #ffffff;
   background: rgba(0, 0, 0, 0);
   color: #ffffff;
+  outline: none; 
 }
 
 .label {
@@ -164,6 +165,11 @@ section {
 a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.hide {
+  transition: 0.2s;
+  opacity: 0;
 }
 
 @media (max-width: 1120px) {

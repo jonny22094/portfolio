@@ -97,5 +97,21 @@
         </div>
       </div>
     </section>
+    <script>
+      const aboutButton = document.querySelector('.about__button')
+
+      window.addEventListener("scroll", () => {
+        if(window.scrollY === 0) {
+          aboutButton.className = "about__button";
+        } else {
+          aboutButton.className = "about__button hide";
+        }
+      });
+
+      aboutButton.addEventListener("click", () => {
+        aboutButton.className = "about__button hide";
+        document.body.scrollIntoView({block: "end", behavior: "smooth"});
+      });
+    </script>
   </body>
 </html>
