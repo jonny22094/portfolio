@@ -82,7 +82,7 @@
                 <li class="list__item">
                   <p class="--between">
                     <span class="list__item--name">
-                      <a href='https://eyedea.io/'>EYEDEA AS</a>
+                      <a href='https://eyedea.io/' target="_blank" rel="noopener">EYEDEA AS</a>
                     </span>
                     <span class="list__item--date">August 2018 - now</span>
                   </p>
@@ -101,8 +101,8 @@
                   </p>
                   <span class="list__item--description">
                     See my full work history on my 
-                    <a href="https://www.linkedin.com/in/jan-rochalski-a54804172" target="_blank">Linkedin</a> and 
-                    <a href="https://github.com/jonny22094" target="_blank">GitHub</a> profiles.
+                    <a href="https://www.linkedin.com/in/jan-rochalski-a54804172" target="_blank" rel="noopener">Linkedin</a> and 
+                    <a href="https://github.com/jonny22094" target="_blank" rel="noopener">GitHub</a> profiles.
                   </span>
                 </li>
               </ul>
@@ -113,17 +113,17 @@
     <script>
       const aboutButton = document.querySelector('.about__button')
 
-      window.addEventListener("scroll", () => {
+      window.addEventListener('scroll', () => {
         if(window.scrollY === 0) {
-          aboutButton.className = "about__button";
+          aboutButton.className = 'about__button';
         } else {
-          aboutButton.className = "about__button hide";
+          aboutButton.className = 'about__button hide';
         }
       });
 
-      aboutButton.addEventListener("click", () => {
-        aboutButton.className = "about__button hide";
-        document.body.scrollIntoView({block: "end", behavior: "smooth"});
+      aboutButton.addEventListener('click', () => {
+        aboutButton.className = 'about__button hide';
+        document.body.scrollIntoView({block: 'end', behavior: 'smooth'});
       });
     </script>
   </body>
