@@ -168,11 +168,6 @@ a {
     padding: 0;
   }
 
-  .content__item {
-    background: #150F1A;
-    padding: 10px;
-  }
-
   .content__name {
     font-size: 72px;
   }
@@ -182,6 +177,20 @@ a {
   .socialMedia {
     position: absolute;
     top: 0;
+  }
+
+  .list {
+    padding: 0;
+  }
+
+  section {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    padding: 8px;
   }
 }
 
